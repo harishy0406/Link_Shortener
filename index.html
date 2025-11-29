@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Shortener | URL Mini</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>URL Mini 🔗</h1>
+    <p>Shorten URLs • Create Custom Links • Generate QR Codes • Track Clicks</p>
+  </header>
+
+  <section class="shortener-box">
+    <input type="url" id="longUrl" placeholder="Enter long URL..." />
+    <input type="text" id="customAlias" placeholder="Custom alias (optional)" />
+    <button id="shortenBtn">Shorten URL</button>
+  </section>
+
+  <section id="result" class="hidden">
+    <h3>Shortened Link</h3>
+    <div class="result-box">
+      <input type="text" id="shortUrl" readonly />
+      <button id="copyBtn">Copy</button>
+      <button id="qrBtn">QR</button>
+    </div>
+    <div id="qrCode"></div>
+  </section>
+
+  <h2 class="analytics-title">Link Analytics</h2>
+  <section id="analytics"></section>
+
+  <footer>
+    Built with ❤️ | Harish | Tracks analytics locally
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

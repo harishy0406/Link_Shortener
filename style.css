@@ -1,0 +1,156 @@
+:root {
+  --bg: #0e1320;
+  --card: #151b2d;
+  --accent: #4cafef;
+  --text: #e8eef7;
+  --muted: #9ba7bf;
+  --radius: 14px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  padding-bottom: 50px;
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+header p {
+  color: var(--muted);
+}
+
+.shortener-box {
+  max-width: 700px;
+  margin: 30px auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.shortener-box input {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  background: #1d2436;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.shortener-box button {
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.shortener-box button:hover {
+  background: #7bc8ff;
+}
+
+/* Result */
+#result {
+  max-width: 700px;
+  margin: 20px auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.result-box {
+  display: flex;
+  gap: 10px;
+}
+
+.result-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: none;
+  background: #1d2436;
+  color: var(--text);
+}
+
+.result-box button {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+#qrCode {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Analytics Table */
+.analytics-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+#analytics {
+  max-width: 750px;
+  margin: 20px auto;
+}
+
+.analytics-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-left h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.analytics-left p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.delete-btn {
+  background: #ff7676;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #ff9e9e;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--muted);
+}
+.hidden {
+  display: none;
+}
